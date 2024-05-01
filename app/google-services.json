@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "27726303859",
+    "project_id": "tiendaucompensarapp",
+    "storage_bucket": "tiendaucompensarapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27726303859:android:795fb9598f3e5a1e659006",
+        "android_client_info": {
+          "package_name": "com.example.tiendaucompesarapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_dCO6QQHBdeOo0P6hPz4VDikraAMsmjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
