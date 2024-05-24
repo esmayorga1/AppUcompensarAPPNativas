@@ -27,7 +27,7 @@ class login : AppCompatActivity() {
 
         registerTextView.setOnClickListener {
 
-            val intent = Intent(this, logout ::class.java)
+            val intent = Intent(this, mainPruductsUcompensar ::class.java)
 
             startActivity(intent)
         }
@@ -64,7 +64,7 @@ class login : AppCompatActivity() {
                         Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
 
                         // Redireccionar a una actividad después del inicio de sesión
-                        startActivity(Intent(this, mainPruductsUcompensar::class.java))
+                        startActivity(Intent(this, logout::class.java))
                         finish()
                     }
                 } else {

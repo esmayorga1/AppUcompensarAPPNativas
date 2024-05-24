@@ -1,35 +1,31 @@
 package com.example.tiendaucompesarapp
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class cart : AppCompatActivity() {
+class cartItem : AppCompatActivity() {
+
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_cart)
+        setContentView(R.layout.activity_cart_item)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        val cartIcon = findViewById<ImageView>(R.id.imageView9)
-
-        cartIcon.setOnClickListener {
-            val intent = Intent(this, mainPruductsUcompensar ::class.java)
-            startActivity(intent)
-
-        }
-
-
-
-
-
     }
+
 }
+
+
+
